@@ -1,0 +1,14 @@
+---------------------2022.6.26-------------------------------
+(1)使用绝对路径来调用模组
+进入目标文件（clone_repo）路径后查找模组路径
+where.exe python.exe                                                                     %find python    (C:\Users\Jason\AppData\Local\Microsoft\WindowsApps\python.exe)
+where.exe pip.exe                                                                        %fing pip       (C:\Users\Jason\AppData\Local\Microsoft\WindowsApps\pip.exe)
+C:\Users\Jason\AppData\Local\Microsoft\WindowsApps\pip.exe install -r requirements.txt   %pip install
+
+(2)环境更改，conda环境系统bug太多，改用venv来隔离环境
+C:\Users\Jason\AppData\Local\Microsoft\WindowsApps\python.exe -m venv venv               %create venv
+ .\venv\Scripts\activate                                                                 %activate venv
+ 
+(3)第一次运行track.py
+ py .\track.py --source .\train.mp4 --strong-sort-weights osnet_x0_25_market1501.pt    
+
