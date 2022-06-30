@@ -12,3 +12,6 @@ C:\Users\Jason\AppData\Local\Microsoft\WindowsApps\python.exe -m venv venv      
 (3)第一次运行track.py
  py .\track.py --source .\train.mp4 --strong-sort-weights osnet_x0_25_market1501.pt    
 
+----------2022.6.30------------------ ---
+应用python程序coco数据集导出特定的类，没有microsoft visual c++ 2015 build tool，使用通过pycharm安装工具到anaconda中，成功。
+是否之前anacoda创建环境的失败与此有关，有待考究。
