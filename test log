@@ -21,3 +21,21 @@ C:\Users\Jason\AppData\Local\Microsoft\WindowsApps\python.exe -m venv venv      
 ---------------------2022.7.2--------------------------------
 cocodataset使用roboflow成功到处文件并进行首次模型训练，8小时后驾崩，重新来过
 
+---------------------2022.7.4--------------------------------
+一、重新启用anaconda
+（1）创建环境
+conda create -n sort python==3.8
+（2）激活环境
+activate sort           #deactivate  退出
+（3）安装环境细则
+conda pip install
+conda install
+因为pip不一定有相应模块的版本，所以可能会用到conda install,安装时注意查看pycharm上的python packages上有没有成功安装版本
+
+二、可视化模块wandb
+wandb login
+
+三、第一次训练
+ python train.py --weights ' ' --cfg .\models\yolov5l_custom.yaml --data .\data\coco_custom.yaml --epoch 5 --batch-size 2 --img 640
+
+
