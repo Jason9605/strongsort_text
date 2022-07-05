@@ -36,6 +36,14 @@ conda install
 wandb login
 
 三、第一次训练
- python train.py --weights ' ' --cfg .\models\yolov5l_custom.yaml --data .\data\coco_custom.yaml --epoch 5 --batch-size 2 --img 640
+ .train.py文件修改
+ '--batch-size', type=int, default=16, help='total batch size for all GPUs, -1 for autobatch'
+ '--weights', type=str, default=ROOT / 'yolov5s.pt', help='initial weights path'              @注意yolo版本
+ '--workers', type=int, default=16, help='max dataloader workers (per RANK in DDP mode)'
+ 
+ 第一次运行
+ python train.py --weights ' ' --cfg .\models\yolov5l_custom.yaml --data .\data\coco_custom.yaml --epoch 3 --batch-size 4 
+ 第二次运行
+ python train.py --weights .\runs\train\exp11\weights\best.pt  --data .\data\coco_custom.yaml --epoch 3 --batch-size 4      @加载上次的权重，best.py 文件
 
 
