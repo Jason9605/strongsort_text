@@ -46,4 +46,10 @@ wandb login
  第二次运行
  python train.py --weights .\runs\train\exp11\weights\best.pt  --data .\data\coco_custom.yaml --epoch 3 --batch-size 4      @加载上次的权重，best.py 文件
 
+----------------------2022.7.12-------------------------------
+（1）第一版yolov5s妥协版权重文件
+D:\workspace\Yolov5_StrongSORT_OSNet\yolov5\runs\train\exp25
+wandb：38号数据
+（2）训练yolov5m
+300epoch
 
