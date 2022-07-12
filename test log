@@ -52,4 +52,5 @@ D:\workspace\Yolov5_StrongSORT_OSNet\yolov5\runs\train\exp25
 wandb：38号数据
 （2）训练yolov5m
 300epoch
-
+----------------------2022.7.13-------------------------------
+暂停训练5m，查看权值文件
